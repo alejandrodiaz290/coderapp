@@ -6,11 +6,13 @@ import About from './components/about';
 import Contact from './components/contact';
 import Home from './components/home';
 import NavBarPrueba from './layouts/navbar';
+import ItemListContainer from './components/ItemListContainer';
+import { Navbar } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-
+      
 <BrowserRouter>
 <Routes>
   <Route path='/' element={ <NavBarPrueba /> }>
@@ -21,6 +23,9 @@ function App() {
   </Route>
 </Routes> 
 </BrowserRouter>
+<Navbar />
+<ItemListContainer greeting={"abc"} />
+
 
     </div>
   );

@@ -1,5 +1,7 @@
 import { Navbar, Nav, Container } from "react-bootstrap"
 import { Outlet, Link } from "react-router-dom"
+import CartWidget from "../components/CartWidjet"
+import ItemListContainer from "../components/ItemListContainer"
 
 const NavBarPrueba = () => {
     return(
@@ -12,8 +14,9 @@ const NavBarPrueba = () => {
             <Nav className="me-auto">
                 <Nav.Link as={Link} to="/" >Home</Nav.Link>
                 <Nav.Link as={Link} to="/about">Nosotros</Nav.Link>
-                <Nav.Link as={Link} to="/contact">Contacto</Nav.Link>                
+                <Nav.Link as={Link} to="/contact">Contacto</Nav.Link>             
             </Nav>
+            <CartWidget/>  
             </Navbar.Collapse>
         </Container>
         </Navbar>  
