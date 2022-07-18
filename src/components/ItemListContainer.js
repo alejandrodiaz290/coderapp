@@ -1,7 +1,7 @@
 import React from "react";
 import ItemCount from './ItemCount';
 import ItemList from "./ItemList";
-import products from "../";
+import products from "./products.json";
 
 const ItemListContainer = ({ greeting }) => {
    function onAddCallback(n){
