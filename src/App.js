@@ -25,8 +25,6 @@ function App() {
 </BrowserRouter>
 <Navbar />
 <ItemListContainer greeting={"abc"} />
-
-
     </div>
   );
 }
